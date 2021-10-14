@@ -1,0 +1,210 @@
+@font-face {
+    font-family: 'geoSansLight'; /*a name to be used later*/
+    src: url('Fonts/GeosansLight.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'openSans'; /*a name to be used later*/
+    src: url('Fonts/OpenSans-Light.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'oswald'; /*a name to be used later*/
+    src: url('Fonts/Oswald.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'georama'; /*a name to be used later*/
+    src: url('Fonts/Georama.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'textMeOne'; /*a name to be used later*/
+    src: url('Fonts/TextMeOne.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'robotoSlab'; /*a name to be used later*/
+    src: url('Fonts/RobotoSlab-VariableFont_wght.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'monoton'; /*a name to be used later*/
+    src: url('Fonts/Monoton-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'typeKeys'; /*a name to be used later*/
+    src: url('Fonts/Type_Keys_Filled.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'consolas'; /*a name to be used later*/
+    src: url('Fonts/consolas.TTF'); /*URL to font*/
+}
+@font-face {
+    font-family: 'open24'; /*a name to be used later*/
+    src: url('Fonts/Open-24-Display-St.ttf'); /*URL to font*/
+}
+body
+{
+    /* background-color:#242424; */
+    background:linear-gradient(to top right, #000000, #3b3b3b);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+/* JUST TO COVER THE BOTTOM PART */
+footer
+{
+    height:50px;
+    color:white;
+}
+#header
+{
+    width:100%;
+    text-align: center;
+    /* background-color: #242424; */
+    background:linear-gradient(to top, #161616, #2c2c2c);
+    color: #f0f0f0;
+    border: 2px solid #464646;
+    border-radius:0.1em;
+    font-family:"robotoSlab";
+    padding:1px;
+    margin:2px;
+}
+h1
+{
+    font-size:3.5em;
+    margin:5px;
+    font-family:"robotoSlab";
+    padding:2px;
+    /* linear-gradient(to right, #f7ff00, #db36a4) */
+    background: -webkit-linear-gradient(top, #6b6b6b, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#scorebar
+{
+    width: 20%;
+    height:40px;
+    text-align: center;
+    /* background-color: #242424; */
+    background:linear-gradient(to top, #000000, #2b2b2b);
+    color: #84e643;
+    border: 2px solid #464646;
+    border-radius:0.1em;
+    font-family:"geoSansLight";
+    font-size:1.5em;
+    padding:2px;
+    font-weight:bold;
+    margin:3px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    transition:1s;
+}
+#scorebar:hover
+{
+    box-shadow: 0px 0px 4px 1px #9dfd03;
+}
+#letters
+{
+    width:60%;
+    height:110px;
+    text-align: center;
+    /* background-color: #242424; */
+    background:linear-gradient(to top, #202020, #2b2b2b);
+    color: #f1f1f1;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #7f7fd5, #86a8e7, #91eae4);
+    border-image-slice:1;
+    border-radius:0.1em;
+    font-family:"consolas";
+    font-weight:100;
+    font-size:1.8em;
+    padding:0.2em;
+    margin:3px;
+    display:flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    transition:1s;
+}
+#letters:hover
+{
+    box-shadow: 0px 0px 4px 1px #b1ffee;
+}
+#letters div
+{
+    padding:5px;
+    margin:5px;
+}
+#keyboard
+{
+    width:60%;
+    height:350px;
+    margin:5px auto;
+    /* background-color:whitesmoke; */
+    /* background-color: #1f1f1f; */
+    background:linear-gradient(to top, #000000, #2b2b2b);
+    /* border: 2px solid #ffd104; */
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+    border-image-slice:1;
+    border-radius:0.15em;
+    padding:0.2em;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  */
+
+    transition:1s;
+    /* flex-grow: 1; */
+}
+#keyboard:hover
+{
+    box-shadow: 0px 0px 5px 1px #dd8bf7;
+}
+.rows
+{
+    width: 100%;
+    margin:10px auto;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+}
+.keez
+{
+    height:60px;
+    width:60px;
+    /* background-color: #242424; */
+    background:linear-gradient(to top right, #141414, #2b2b2b);
+    text-align: center;
+    justify-content: center;
+    color: #fafcfd;
+    font-family:"textMeOne";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight:bold;
+    font-size:2.2em;
+    padding:0px; 
+    margin:0px 10px;
+    /* border:2px solid #28b2f1; */
+    border:2px solid #eeeeee;
+    border-radius:50%;
+    box-shadow: 0px 0px 3px 1px #72d6f5;
+    /* box-shadow: 0px 0px 3px 1px #f1f1f1; */
+}
+#Space
+{
+    height:60px;
+    width:400px;
+    /* background-color: #fcfbca; */
+    background:linear-gradient(to top right, #141414, #2b2b2b);
+    text-align: center;
+    color: #242424;
+    font-family:"textMeOne";
+    font-weight:bold;
+    font-size:1.7em;
+    padding:0px; 
+    margin:0px auto;
+    border:2px solid #eeeeee;
+    border-radius:0.15em;
+    box-shadow: 0px 0px 3px 1px #72d6f5;
+}
