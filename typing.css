@@ -38,6 +38,10 @@
     font-family: 'open24'; /*a name to be used later*/
     src: url('Fonts/Open-24-Display-St.ttf'); /*URL to font*/
 }
+html{
+    margin:0px;
+    height:100%;
+}
 body
 {
     /* background-color:#242424; */
